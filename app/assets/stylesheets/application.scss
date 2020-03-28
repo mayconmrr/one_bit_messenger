@@ -1,10 +1,10 @@
-@import 'bulma/bulma';
+@import "bulma/bulma";
 @import "@fortawesome/fontawesome-free/css/fontawesome.min.css";
 @import "@fortawesome/fontawesome-free/css/solid.min.css";
 @import "bulma-quickview/dist/css/bulma-quickview";
 
 .navbar-burger.burger.desktop-burger {
-  display: block;
+  display: block
 }
 
 .sidebar-menu {
@@ -16,6 +16,33 @@
         text-decoration: none;
         color: $white-ter;
       }
+    }
+  }
+}
+
+div.columns.item-list {
+  border-bottom: 1px dashed $white-ter;
+
+  a {
+    &:link, &:hover, &:visited, &:active {
+      text-decoration: none;
+      color: $white-ter;
+    }
+  }
+
+  i.fas {
+    font-size: 50px
+  }
+
+  figure {
+    margin: auto;
+    width: 50px;
+    height: 50px;
+
+    img {
+      margin: auto;
+      height: inherit;
+      width: inherit;
     }
   }
 }
