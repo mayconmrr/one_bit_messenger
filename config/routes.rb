@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'home#index'
+  root to: 'chats#index'
 
   devise_for :users
   resources :contacts, only: %i(index new create destroy)
