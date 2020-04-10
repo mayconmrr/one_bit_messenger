@@ -9,5 +9,10 @@ consumer.subscriptions.create("MessageChannel", {
     let messageContainer = document.querySelector("div.message-container");
     messageContainer.innerHTML += data;
     messageContainer.scrollIntoView(false);
+    $.ajax({
+      url: 'www.google.com',
+
+      method: "get"
+    })
   }
 });

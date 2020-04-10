@@ -17,7 +17,7 @@ class ChatsController < ApplicationController
   private
 
   def update_readed_at
-    messages = Message.where(sender: @user, receiver: current_user)
+    messages = Message.where(sender: @user, receiver: current_user, readed_at: nil)
     messages.update(readed_at: DateTime.now)
   end
 end
