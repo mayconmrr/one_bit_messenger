@@ -19,5 +19,6 @@ class ChatsController < ApplicationController
   def update_readed_at
     messages = Message.where(sender: @user, receiver: current_user, readed_at: nil)
     messages.update(readed_at: DateTime.now)
+    messages.each { |message| MessageReadedJob.perform_now(message) }
   end
 end
