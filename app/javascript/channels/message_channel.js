@@ -7,12 +7,18 @@ consumer.subscriptions.create("MessageChannel", {
 
   received(data) {
     let messageContainer = document.querySelector("div.message-container");
-    messageContainer.innerHTML += data;
-    messageContainer.scrollIntoView(false);
-    $.ajax({
-      url: 'www.google.com',
+    if (typeof(messageContainer) != 'undefined' && messageContainer != null) {
+      console.log(data['id'])
+      messageContainer.innerHTML += data['data'];
+      messageContainer.scrollIntoView(false);
 
-      method: "get"
-    })
+      var params = { message: { id: data['id']} }
+      $.ajax ({
+        url: '/messages/:id',
+        type: 'PUT',
+        dataType: 'SCRIPT',
+        data: params
+      });
+    }
   }
 });
