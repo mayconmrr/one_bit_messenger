@@ -11,6 +11,11 @@ div.columns.message {
     }
   }
 
+  #full_content{
+    display: flex;
+    justify-content: space-between;
+  }
+
   &.sender {
     flex-direction: row-reverse;
 

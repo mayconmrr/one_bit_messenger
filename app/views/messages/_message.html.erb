@@ -11,8 +11,19 @@
 
   <div class="column is-11-table is-four-fifth-mobile details">
     <div class="columns is-multiline">
-      <div class="column is-full content">
+      <div class="column is-full content" id='full_content'>
         <%= message.content %>
+
+        <div id="message_icon_<%= message.id %>">
+          <% if message.sender == current_user %>
+            <% if message.readed_at.present? %>
+              <i class="fas fa-check has-text-black-ter"></i>
+            <% else %>
+              <i class="fas fa-check has-text-white-ter"></i>
+            <% end %>
+          <% end %>
+        </div>
+
       </div>
 
       <div class="column is-full date">

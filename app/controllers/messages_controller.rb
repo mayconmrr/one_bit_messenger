@@ -9,7 +9,8 @@ class MessagesController < ApplicationController
   end
 
   def update
-    @message.update(readed_at: DateTime.now)
+    @message.update(readed_at: DateTime.now) unless @message.readed_at.present?
+    MessageReadedJob.perform_now(@message)
   end
 
   private
