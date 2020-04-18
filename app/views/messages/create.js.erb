@@ -5,6 +5,7 @@ document.querySelector("textarea[name='message[content]']").classList.remove("is
   messageContainer.innerHTML += "<%= j render("messages/message", message: @message) %>"
   messageContainer.scrollIntoView(false);
   document.querySelector("textarea[name='message[content]']").value = ""
+  document.querySelector("textarea").focus();
 <% else %>
   document.querySelector("textarea[name='message[content]']").classList.add("is-danger")
 <% end %>

@@ -26,11 +26,11 @@
         <div class="columns is-mobile is-vcentered">
           <div class="column is-four-fifths">
             <div class="fields">
-              <%= f.text_area "message[content]", class: "textarea has-text-black-ter", rows: 1, style: "resize: none", id: 'text_area_message' %>
+              <%= f.text_area "message[content]", class: "textarea has-text-black-ter", rows: 1, style: "resize: none", id: 'text_area_message', onkeypress: "enterSubmit(event);" %>
             </div>
           </div>
           <div class="column is-one-fifth has-text-centered">
-            <%= button_tag id: 'btn_id', class: "button is-info is-rounded has-text-white-ter" do %>
+            <%= button_tag id: 'submit_message', class: "button is-info is-rounded has-text-white-ter" do %>
               <i class="fas fa-paper-plane"></i>
             <% end %>
           </div>
@@ -39,3 +39,12 @@
     </div>
   </footer>
 </div>
+
+<script>
+  function enterSubmit(event) {
+    if (event.which == 13 && !event.shiftKey) {
+      event.preventDefault();
+      document.querySelector("#submit_message").click();
+    }
+  }
+</script>
