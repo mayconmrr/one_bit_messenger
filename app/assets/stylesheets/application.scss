@@ -58,3 +58,8 @@ div.columns.item-list {
   bottom: 30px;
   right: 30px;
 }
+
+#user_email, #user_password {
+  text-decoration: none;
+  color: $black-ter;
+}
