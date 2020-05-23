@@ -21,7 +21,7 @@ div.columns.message {
 
     div.column {
       &.content {
-        color: $black-ter;
+
         background-color: #99FF99;
       }
 
@@ -33,8 +33,7 @@ div.columns.message {
 
   &.receiver {
     div.column.content {
-      color: $black-ter;
-      background-color: $white-ter
+
     }
   }
 }
