@@ -5,10 +5,10 @@ class MessageReadedJob < ApplicationJob
     ReaderChannel.broadcast_to(message.sender, message.id)
   end
 
-  # private
+  private
 
-  # def render_partial(message)
-  #   MessagesController.renderer.render partial: "messages/message",
-  #                                       locals: { message: message, current_user: message.sender }
-  # end
+  def render_partial(message)
+    MessagesController.renderer.render partial: "messages/message",
+                                        locals: { message: message, current_user: message.sender }
+  end
 end
