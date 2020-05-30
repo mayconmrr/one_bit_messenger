@@ -6,15 +6,16 @@ As `User` you can:
   -> send and receive messages instantaneously;
   -> white check symbol to show your message was sent, a black check symbol if the reciever readed it.
 - - - - -
-
 # App Preview
-Conversation Sample
-![](app/assets/images/readme/chat.png)
+`Conversation Sample`
+
+  ![](app/assets/images/readme/chat.png)
 
 - - - - -
 
-List Contacts
-![](app/assets/images/readme/contacts.png)
+`List Contacts`
+
+  ![](app/assets/images/readme/contacts.png)
 
 ## Ruby Verion
 Ruby 2.7.0
