@@ -10,11 +10,11 @@ As `User` you can:
 # App Preview
 Conversation Sample
 ![](app/assets/images/readme/chat.png)
+
 - - - - -
 
 List Contacts
 ![](app/assets/images/readme/contacts.png)
-- - - - -
 
 ## Ruby Verion
 Ruby 2.7.0
