@@ -1,24 +1,39 @@
-# README
+# One Bit Messenger
+Send and receive messages using this awesome app.
+As `User` you can:
+  -> add new contacts;
+  -> check your contacts status (online or offline);
+  -> send and receive messages instantaneously;
+  -> white check symbol to show your message was sent, a black check symbol if the reciever readed it.
+- - - - -
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# App Preview
+Conversation Sample
+![](app/assets/images/readme/chat.png)
+- - - - -
 
-Things you may want to cover:
+List Contacts
+![](app/assets/images/readme/contacts.png)
+- - - - -
 
-* Ruby version
+## Ruby Verion
+Ruby 2.7.0
 
-* System dependencies
+## Rails Version
+Rails 6.0.3
 
-* Configuration
+## Setup
+Run in your console:
+```
+bin/setup
+```
+```
+rails db:drop db:create db:migrate
+```
 
-* Database creation
+## Project Inspiration
+https://onebitcode.com/
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Instructor:
+Github: https://github.com/dfmoreto
+Linkedin: https://www.linkedin.com/in/dfmoreto/
