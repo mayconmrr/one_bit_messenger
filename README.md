@@ -1,6 +1,7 @@
 # One Bit Messenger
 Send and receive messages using this awesome app.
-As `User` you can:
+
+As an `User` you can:
 ```
 -> add new contacts;  
 -> check your contacts status (online or offline);  
