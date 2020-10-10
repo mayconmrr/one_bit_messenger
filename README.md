@@ -1,10 +1,12 @@
 # One Bit Messenger
 Send and receive messages using this awesome app.
 As `User` you can:
-  -> add new contacts;
-  -> check your contacts status (online or offline);
-  -> send and receive messages instantaneously;
-  -> white check symbol to show your message was sent, a black check symbol if the reciever readed it.
+```
+-> add new contacts;  
+-> check your contacts status (online or offline);  
+-> send and receive messages instantaneously;  
+-> white check symbol to show your message was sent, a black check symbol if the reciever readed it.
+```
 - - - - -
 # App Preview
 `Conversation Sample`
